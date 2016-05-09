@@ -4,3 +4,23 @@ Rangi na serwerze:
        * Pomocnik           chat:&3[Pomocnik] &7Nazwa&f: %message%          ||    &3Nazwa&f: %message%
        * VIP                chat:&6[VIP] &7Nazwa&f: %message%               ||    &6Nazwa&f: %message%
        * Gracz              chat:&7Nazwa&f: %message%
+
+
+Ekonomia:
+
+      - za zabójstwo będziemy otrzymywać od 1 do 3 diamentów oraz od 6 do 12 expa
+      - za diamenty będzie można zakupić nowe przedmioty, enchanty, mikstury
+      - 
+      
+
+Pluginy na serwerze:
+- AuthMe
+- Essentials
+- EssentialsChat
+- EssentialsSpawn
+- PermissionsEX
+- WorldEdit
+- WorldGuard
+- WorldBorder
+- NoCheatPlus
+- ChatQ
