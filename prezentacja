@@ -9,33 +9,53 @@ Logo:
     https://textcraft.net/
 
 Plugins:
- - AuthMe Reloaded
- - FastLogin
- - ProtocolLib
- - Vault
- - GroupManager
- - EssentialsX
- - GriefPrevention
- - CoreProtect
- - WorldEdit
- - WorldGuard
- - MythicMobs
- - MythicDrops
- - PvPLevels
- - Parties
- - UltraCosmetics
- - ShopChest
- - SafeTrade
- - JobsReborn
- - CrazyAuctions
- - OldCombatMechanics
- - WorldBorder
- - Staff+
- - ExploitPatcher
+ + AuthMe Reloaded
+ + FastLogin
+ + ProtocolLib
+ + Vault
+ + PAC
+ + GroupManager
+ + EssentialsX
+ + GriefPrevention
+ + CoreProtect
+ + WorldEdit
+ + WorldGuard
+ + MythicMobs
+ + MythicDrops
+ + PvPLevels
+ + Parties
+ + UltraCosmetics
+ + ShopChest
+ + SafeTrade
+ + JobsReborn
+ + CrazyAuctions
+ + OldCombatMechanics
+ + WorldBorder
+ + Staff+
+ + ExploitPatcher
  - ServerListPlus ??????????????????????????
  - Duels ???????????????????
  - AreaShop ?????????????????? Cuboidy przy spawnie
  - Quests ?????????????????
+
+
+RANGI:
+default --->  &7[Gracz] Gracz&8:&f ----
+donator ---> &6&l[DONATOR] &7Gracz&8:&f ----
+kidmod ---> &a&l[KID&2&lMODERATOR] &7Gracz&8:&f ----
+mod ---> &2&l[MODERATOR] &7Gracz&8: &f ----
+admin ---> &4&l[ADMINISTRATOR] &7Gracz&8: &f----
+
+DONATOR:
+    - 2x mniejszy cooldown komendy teleportującej,
+    - więcej kosmetyków,
+    - więcej zwierzątek,
+    - 10x /sethome
+    - /ptime
+    - /pweather
+    - prefix,
+    - kolory na czacie i tabliczkach,
+    - 
 
 
 -------------------------------------------------------
