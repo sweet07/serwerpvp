@@ -1,4 +1,7 @@
 CelestialGaming
+Pexbuilder - przydatke do tworzenia uprawnień
+PreciousStone zamiast GriefPrevention ??
+
 
 Czcionka:
     Roboto medium;
@@ -18,22 +21,22 @@ Plugins:
  + PAC
  + GroupManager
  + EssentialsX
- + GriefPrevention
+ - GriefPrevention
  + CoreProtect
  + WorldEdit
  + WorldGuard
- + MythicMobs
- + MythicDrops
- + PvPLevels
- + Parties
- + UltraCosmetics
- + ShopChest
- + SafeTrade
- + JobsReborn
- + CrazyAuctions
+ - MythicMobs
+ - MythicDrops
+ - PvPLevels
+ - Parties
+ - UltraCosmetics
+ - ShopChest
+ - SafeTrade
+ - JobsReborn
+ - CrazyAuctions
  + OldCombatMechanics
  + WorldBorder
- + Staff+
+ - Staff+
  + ExploitPatcher
  - ServerListPlus ??????????????????????????
  - Duels ???????????????????
