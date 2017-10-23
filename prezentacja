@@ -41,10 +41,10 @@ Plugins:
 
 RANGI:
 default --->  &7[Gracz] Gracz&8:&f ----
-donator ---> &6&l[DONATOR] &7Gracz&8:&f ----
-kidmod ---> &a&l[KID&2&lMODERATOR] &7Gracz&8:&f ----
-mod ---> &2&l[MODERATOR] &7Gracz&8: &f ----
-admin ---> &4&l[ADMINISTRATOR] &7Gracz&8: &f----
+donator ---> &6[DONATOR] &7Gracz&8:&f ----
+kidmod ---> &a[KID&2&lMODERATOR] &7Gracz&8:&f ----
+mod ---> &2[MODERATOR] &7Gracz&8: &f ----
+admin ---> &4[ADMINISTRATOR] &7Gracz&8: &f----
 
 DONATOR:
     - 2x mniejszy cooldown komendy teleportującej,
