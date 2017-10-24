@@ -1,0 +1,365 @@
+# < - - - - - - - - - - - - - - - - - - - - > #
+#                                             #
+#                  PvPLevels                  #
+#                 Version: 60                 #
+#                     by                      #
+#                  MathiasMC                  #
+#                                             #
+# < - - - - - - - - - - - - - - - - - - - - > #
+gui:
+  '1':
+    name: '&9&lPvP Sell page: 1'
+    slots: 54
+    nextpage:
+      id: '262:0'
+      slot: 53
+      event: NEXTPAGE
+      displayname: '&cNext Page'
+      lores:
+      - '&6Go to next page'
+    goback:
+      id: '280:0'
+      slot: 45
+      event: GOBACK
+      displayname: '&cGo Back'
+      lores:
+      - '&6Go back'
+    list:
+      '1':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 0
+      '2':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 1
+      '3':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 2
+      '4':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 3
+      '5':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 4
+      '6':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 5
+      '7':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 6
+      '8':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 7
+      '9':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 8
+      '10':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 9
+      '11':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 17
+      '12':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 18
+      '13':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 26
+      '14':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 27
+      '15':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 35
+      '16':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 36
+      '17':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 37
+      '18':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 38
+      '19':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 39
+      '20':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 40
+      '21':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 41
+      '22':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 42
+      '23':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 43
+      '24':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 44
+      '25':
+        id: '264:0'
+        title: '&cDiamond'
+        event: COMMAND
+        commands:
+        - msg {pvplevels_player} sold 1 diamond for $50
+        cooldown: 0
+        level: 0
+        sell-price: '50'
+        amount: 1
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have sold 1 diamond for $50!'
+        lores:
+        - '&eSell 1 diamond'
+        - '&e$50'
+        - '&eRequire Level: 0'
+        POSITION: 10
+      '26':
+        id: '388:0'
+        title: '&cEmerald'
+        event: COMMAND
+        commands:
+        - msg {pvplevels_player} sold 1 emerald for $100
+        cooldown: 0
+        level: 1
+        sell-price: '100'
+        amount: 1
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have sold 1 emerald for $100!'
+        lores:
+        - '&eSell 1 emerald'
+        - '&e$100'
+        - '&eRequire Level: 1'
+        POSITION: 11
+  '2':
+    name: '&9&lPvP Sell page: 2'
+    slots: 54
+    nextpage:
+      id: '262:0'
+      slot: 53
+      event: NEXTPAGE
+      displayname: '&cNext Page'
+      lores:
+      - '&6Go to next page'
+    goback:
+      id: '280:0'
+      slot: 45
+      event: GOBACK
+      displayname: '&cGo Back'
+      lores:
+      - '&6Go to previous page'
+    list:
+      '1':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 0
+      '2':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 1
+      '3':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 2
+      '4':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 3
+      '5':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 4
+      '6':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 5
+      '7':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 6
+      '8':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 7
+      '9':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 8
+      '10':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 9
+      '11':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 17
+      '12':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 18
+      '13':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 26
+      '14':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 27
+      '15':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 35
+      '16':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 36
+      '17':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 37
+      '18':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 38
+      '19':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 39
+      '20':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 40
+      '21':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 41
+      '22':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 42
+      '23':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 43
+      '24':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 44
+      '25':
+        id: '351:4'
+        title: '&cLapis lazuli'
+        event: COMMAND
+        commands:
+        - msg {pvplevels_player} sold 1 lapis lazuli
+        cooldown: 0
+        level: 4
+        sell-price: '200'
+        amount: 1
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have sold 1 lapis lazuli for $200!'
+        lores:
+        - '&eSell 1 lapis lazuli'
+        - '&e$200'
+        - '&eRequire Level: 4'
+        POSITION: 10
+      '26':
+        id: '331:0'
+        title: '&cRedstone'
+        event: COMMAND
+        commands:
+        - msg {pvplevels_player} sold 1 redstone
+        cooldown: 0
+        level: 5
+        sell-price: '300'
+        amount: 1
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have sold 1 redstone for $300!'
+        lores:
+        - '&eSell 1 redstone'
+        - '&e$300'
+        - '&eRequire Level: 5'
+        POSITION: 11
