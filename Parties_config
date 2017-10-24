@@ -86,7 +86,7 @@ database:
         delay-delete-party: 600
 party:
     # Max members in a party (-1 is unlimited)
-    max-members: -1
+    max-members: 5
     # Regex of the chars (Use "\\" instead "\") (For ALL utf characters use "[\p{L}\s]+")
     allowed-chars: '[a-zA-Z0-9]+'
     # If you use tag-name system, for avoid bugs set max to 10
@@ -115,7 +115,7 @@ party:
     home:
         # Party home cooldown in seconds (-1 is unlimited)
         # Can be bypassed by permission parties.home.%time%
-        cooldown: 0
+        cooldown: 10
         # Deny teleport if player move or be hitted
         cancel-if-move: true
         # Distance for deny teleport
@@ -143,8 +143,8 @@ party:
     ranks:
         member:
             rank: 5
-            name: "Member"
-            chat: "&bMember"
+            name: "Czlonek"
+            chat: "&bCzlonek"
             default: true
             permissions:
             - party.sendmessage
@@ -168,8 +168,8 @@ party:
             - '*'
         leader:
             rank: 20
-            name: "Leader"
-            chat: "&4&lLeader"
+            name: "Lider"
+            chat: "&4&lLider"
             permissions:
             - '*'
 description:
@@ -199,18 +199,18 @@ kills:
         players: true
 tablist:
     # Use ProtocolLib (4+) [IT BROKES SKINS]
-    enable: false
+    enable: true
     # Leaves blank to unchange
     # Using json text
     in-party: "{\"text\":\"%player%\",\"color\":\"aqua\"}"
     out-party: ""
     # Header & Footer, leave blank to disable
     header:
-        in-party: "&b> %party% <"
-        out-party: "&cOut of party"
+        in-party: "&b[%party%]"
+        out-party: ""
     footer:
-        in-party: "&b&lParties"
-        out-party: "&b&lParties"
+        in-party: "&b&lDruzyny"
+        out-party: "&b&lDruzyny"
 tag:
     # Set a tag name ahead players head (Use ScoreboardTeams system)
     # To avoid Minecraft bugs characters limit is 16 (party name included)
@@ -238,9 +238,9 @@ tag:
         min-lenght: 3
         censored-words: []
 chat:
-    chat-format: "&b[Party] %rank% %player%&r&7: &b%message%"
-    spy-chat-format: "&7[Party:%party%] %player%: %message%"
-    party-broadcast-format: "&b[Party] %message%"
+    chat-format: "&b[Druzyna] %rank% %player%&r&7: &b%message%"
+    spy-chat-format: "&7[Druzyna:%party%] %player%: %message%"
+    party-broadcast-format: "&b[Druzyna] %message%"
     format-group: "[%name%] "
 list:
     # Sort system:
