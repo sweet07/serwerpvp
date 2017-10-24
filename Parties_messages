@@ -27,12 +27,12 @@
 # You can use \n for ENTER 
 #
 # Special tag: %permission% = Name of missing permission
-no-permission: "&cYou do not have access to that command"
-no-permission-in-party: "&cYou need to be %rank% to perform that command"
-invalid-command: "&cInvalid command"
-cant-hit-mates: "&cYou can't hit your partymates"
-warn-on-hit-leaders: "&c%player% tried to hit %victim%!"
-no-party: "&cYou are not in a party"
+no-permission: "&cBrak uprawnien"
+no-permission-in-party: "&cMusisz byc %rank% aby uzyc tej komendy"
+invalid-command: "&cNiepoprawna komenda"
+cant-hit-mates: "&cNie mozesz bic czlonkow swojej druzyny"
+warn-on-hit-leaders: "&c%player% probowal uderzyc lidera %victim%"
+no-party: "&cNie jestes w druzynie"
 configuration-reloaded: "&aConfiguration reloaded"
 # Special tags: %version% = The version of the update | %thisversion% = The version of your plugin
 update-available: "&9Parties %thisversion% found an update: %version%"
@@ -42,7 +42,7 @@ exp-gained-from-other: "&b%player% has killed a %mob%, you gained %exp% experien
 # Joined into a default party
 default-joined: "&bYou entered into %party%"
 p:
-    wrong-command: "&cWrong variables: Type &7/p <message>"
+    wrong-command: "&cZla komenda, wpisz: &7/p <message>"
 create:
     party-created: "&l&bYou have created the party %party%\n&r&bType &7/party invite &bto invite your mates"
     party-fixed-created: "&l&bYou have created the fixed party %party%"
@@ -51,15 +51,15 @@ create:
     too-long-name: "&cThe party name is too long!"
     too-short-name: "&cThe party name is too short!"
     invalid-name: "&cInvalid characters. Use: a-Z or 0-9."
-    censored-name: "&cThe party name contains censored words!"
-    wrong-command: "&cWrong variables: Type &7/party create <name>"
+    censored-name: "&c!"
+    wrong-command: "&cZla komenda, wpisz: &7/party create <name>"
 password:
     changed: "&aChanged password of the party"
     removed: "&aRemoved password of the party"
     # Special tags: %password% = new password of the party
     broadcast-changed: "%player% changed password of the party"
     invalid-chars: "&cInvalid characters. Use: a-Z or 0-9. Min 1 and max 16 chars."
-    wrong-command: "&cWrong variables: Type &7/party password <password>"
+    wrong-command: "&cZla komenda, wpisz: &7/party password <password>"
 join:
     joined: "&aYou joined in the party %party%"
     player-joined: "&b&l%player% joined in the party"
@@ -67,7 +67,7 @@ join:
     already-in-party: "&cYou are already in a party!"
     wrong-password: "&cWrong password!"
     no-exist: "&cThis party doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party join <party> [password]"
+    wrong-command: "&cZla komenda, wpisz: &7/party join <party> [password]"
 accept:
     welcome-player: "&b&lYou joined the party %party%"
     player-joined: "&b&l%player% joined in the party"
@@ -90,7 +90,7 @@ ignore:
     party-ignored: "&7Ignoring %party% invites"
     party-deignored: "&7You stopped ignoring %party%"
     no-exist: "&cThis party doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party ignore [party]"
+    wrong-command: "&cZla komenda, wpisz: &7/party ignore [party]"
 leave:
     bye-player: "&b&lYou left the party %party%"
     player-leaved-from-party: "&b&l%player% left the party"
@@ -115,7 +115,7 @@ info:
     someone-player: "&6Someone"
     missing: "&7Miss"
     no-exist: "&cThe party %party% doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party info [party]"
+    wrong-command: "&cZla komenda, wpisz: &7/party info [party]"
 members:
     # List rank members: %list_RANK% (Example: %list_member%, %list_moderator% (%list_leader% remember it's unique)
     # Number rank members: %number_RANK%
@@ -130,14 +130,14 @@ members:
     player-separator: "&7, "
     player-empty: "&7Nobody"
     no-exist: "&cThe party %party% doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party members [party]"
+    wrong-command: "&cZla komenda, wpisz: &7/party members [party]"
 desc:
     # Special tag: %desc% = Description of the party
     changed: "&bParty description changed in %desc%"
     removed: "&bParty description removed"
     invalid-chars: "&cInvalid characters. Use: a-Z or 0-9. Min 3 and max 16 chars."
-    censored-name: "&cThe description contains censored words!"
-    wrong-command: "&cWrong variables: Type &7/party desc <description/remove>"
+    censored-name: "&c!"
+    wrong-command: "&cZla komenda, wpisz: &7/party desc <description/remove>"
 motd:
     # Special tag: %motd% = MOTD (Message of the Day) of the party
     changed: "&bParty motd changed"
@@ -146,12 +146,12 @@ motd:
     color-motd: "&b"
     footer: ""
     invalid-chars: "&cInvalid characters. You can also use ''. , /''. Min 3 and max 100 chars."
-    censored-name: "&cThe description contains censored words!"
-    wrong-command: "&cWrong variables: Type &7/party motd <motd/remove>"
+    censored-name: "&c!"
+    wrong-command: "&cZla komenda, wpisz: &7/party motd <motd/remove>"
 chat:
     enabled: "&aChat set to party"
     disabled: "&aChat set to public"
-    wrong-command: "&cWrong variables: Type &7/party chat [on/off]"
+    wrong-command: "&cZla komenda, wpisz: &7/party chat [on/off]"
 list:
     # Special tags: %number% = Number parties online | %page% = Current list page | %maxpages% = How many pages exist
     header: "&b============ &lOnline Parties List &r&b============"
@@ -159,7 +159,7 @@ list:
     no-one-online: "&7Anyone"
     format-party: "&b%party%&7[&6Online %players%&7] %desc%"
     footer: "&b================ &lPage %page% of %maxpages% &r&b================"
-    wrong-command: "&cWrong variables: Type &7/party list [page]"
+    wrong-command: "&cZla komenda, wpisz: &7/party list [page]"
 invite:
     only-online: "&cYou can invite only online players"
     max-player-reached: "&cThe party is full!"
@@ -172,19 +172,19 @@ invite:
     invite-noresponse: "&7%player% didnt accept the party invite"
     invite-revoked-send: "&7Revoked invite sent to %player%"
     invite-revoked-rec: "&7Invited received from %party% has been revoked"
-    wrong-command: "&cWrong variables: Type &7/party invite <name>"
+    wrong-command: "&cZla komenda, wpisz: &7/party invite <name>"
 prefix:
     changed: "&bParty prefix changed in %prefix%"
     removed: "&bParty prefix removed"
     invalid-chars: "&cInvalid characters. Use: a-Z or 0-9. Min 3 and max 6 chars."
-    censored-name: "&cThe prefix contains censored words!"
-    wrong-command: "&cWrong variables: Type &7/party prefix <prefix/remove>"
+    censored-name: "&c!"
+    wrong-command: "&cZla komenda, wpisz: &7/party prefix <prefix/remove>"
 suffix:
     changed: "&bParty suffix changed in %suffix%"
     removed: "&bParty suffix removed"
     invalid-chars: "&cInvalid characters. Use: a-Z or 0-9. Min 3 and max 6 chars."
-    censored-name: "&cThe suffix contains censored words!"
-    wrong-command: "&cWrong variables: Type &7/party suffix <suffix/remove>"
+    censored-name: "&c!"
+    wrong-command: "&cZla komenda, wpisz: &7/party suffix <suffix/remove>"
 kick:
     kick-send: "&b&lYou kicked %player% from your party!"
     kick-up-rank: "&cYou cannot kick your superior!"
@@ -193,18 +193,18 @@ kick:
     kick-send-other: "&bYou kicked %player% from the party"
     other-no-member: "&c%player% is not in a party"
     no-member: "&c%player% is not in your party"
-    wrong-command: "&cWrong variables: Type &7/party kick <name>"
+    wrong-command: "&cZla komenda, wpisz: &7/party kick <name>"
 delete:
     deleted: "&aParty %party% deleted"
     silent-delete: "&aParty %party% silently deleted"
     warn: "&cYour party has been deleted"
     no-exist: "&cThe party %party% doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party delete <party> [silent]"
+    wrong-command: "&cZla komenda, wpisz: &7/party delete <party> [silent]"
 rename:
     renamed: "&aRenamed the party %old% in %party%"
     broadcast-party: "&aYour party has been renamed to %party%!"
     no-exist: "&cThe party %party% doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party rename <party> <newname>"
+    wrong-command: "&cZla komenda, wpisz: &7/party rename <party> <newname>"
 rank:
     promoted: "&b&l%player% rank changed to %rank%"
     no-member: "&c%player% is not in your party"
@@ -215,10 +215,10 @@ rank:
     to-higher-rank: "&cYou cannot promote to a rank equivalent or higher than yours!"
     no-degrade-yourself: "&cYou cannot degrade yourself!"
     no-promote-yourself: "&cYou cannot promote yourself!"
-    wrong-command: "&cWrong variables: Type &7/party rank <player> <rank>"
+    wrong-command: "&cZla komenda, wpisz: &7/party rank <player> <rank>"
 sethome:
     setted-broadcast: "&aThe party have a new home!"
-    wrong-command: "&cWrong variables: Type &7/party sethome"
+    wrong-command: "&cZla komenda, wpisz: &7/party sethome"
 home:
     teleported: "&7Teleported to the party home"
     # Special tag: %time% = Time of cooldown
@@ -226,13 +226,13 @@ home:
     teleport-denied: "&7Teleport denied"
     no-home: "&cThe home of the party isn't setted"
     no-exist-party: "&cThe party doesn't exist"
-    wrong-command: "&cWrong variables: Type &7/party home"
+    wrong-command: "&cZla komenda, wpisz: &7/party home"
 claim:
     done: "&aGranted permission to the party"
     removed: "&aRemoved permission to the party"
     no-manager: "&cYou need to be the manager of the claim"
     no-exist-claim: "&cAny claim found"
-    wrong-command: "&cWrong variables: Type &7/party claim <permission>\n&cPermissions: trust, container & access"
+    wrong-command: "&cZla komenda, wpisz: &7/party claim <permission>\n&cPermissions: trust, container & access"
 spy:
     activated: "&7Now you are a spy!"
     disabled: "&7You are no longer a spy"
@@ -241,7 +241,7 @@ database:
     to-sql: "&aCopied data from FILE to SQL"
     sql-offline: "&cThe database SQL must be online!"
     none: "&cCannot migrate from none database!"
-    wrong-command: "&cWrong variables: Type &7/party migrate <sql/file>"
+    wrong-command: "&cZla komenda, wpisz: &7/party migrate <sql/file>"
 vault:
     create-nomoney: "&cYou don't have enough money to create a party [%price%$]"
     home-nomoney: "&cYou don't have enough money to use the home command [%price%$]"
@@ -254,7 +254,7 @@ vault:
         any-cmd: "&cAny command to confirm"
         warn-onbuy: "&aCommand '%cmd%' cost %price%$.\nType &7/party confirm&a to use it."
         confirmed: "&aPerforming command."
-        wrong-command: "&cWrong variables: Type &7/party confirm"
+        wrong-command: "&cZla komenda, wpisz: &7/party confirm"
 follow:
     following-world: "&7Following %player% in %world%"
     following-server: "&7Following party in %server%"
