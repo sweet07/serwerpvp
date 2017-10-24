@@ -1,0 +1,569 @@
+# < - - - - - - - - - - - - - - - - - - - - > #
+#                                             #
+#                  PvPLevels                  #
+#                 Version: 60                 #
+#                     by                      #
+#                  MathiasMC                  #
+#                                             #
+# < - - - - - - - - - - - - - - - - - - - - > #
+Console:
+  pvpshop:
+    usage:
+    - '&7[&aPvPLevels&7] &c/pvpshop <player>'
+  pvpsell:
+    usage:
+    - '&7[&aPvPLevels&7] &c/pvpsell <player>'
+  pvpstats:
+    usage:
+    - '&7[&aPvPLevels&7] &c/pvpstats <player>'
+  pvplevels:
+    profile:
+      usage:
+      - '&7[&aPvPLevels&7] &c/pvplevels profile <player>'
+    profileall:
+      usage:
+      - '&7[&aPvPLevels&7] &c/pvplevels profileall <player>'
+  pvpmultipliers:
+    usage:
+    - '&7[&aPvPLevels&7] &c/pvpmultipliers <player>'
+  pvpboosters:
+    usage:
+    - '&7[&aPvPLevels&7] &c/pvpboosters <player>'
+PvPLevels:
+  unknowncommand:
+  - '&7[&aPvPLevels&7] &cUnknown command use /pvplevels for list of commands'
+  update:
+    latest:
+    - '&7[&aPvPLevels&7] &aYou are using the latest version of PvPLevels ({pvplevels_version})'
+    new:
+    - '&7[&aPvPLevels&7] &eA new update is available for PvPLevels you are using version:
+      {pvplevels_version} and the newest version is: {pvplevels_new_version}'
+    error:
+    - '&7[&aPvPLevels&7] &cError checking version of PvPLevels'
+  reload:
+    reloaded:
+    - '&7[&aPvPLevels&7] &aReloaded all configs!'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  permission:
+  - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  player:
+    help:
+    - '&7----------&aPvPLevels Help&7----------'
+    - '&c/pvplevels set level/xp/kills/deaths <player> <number>'
+    - '&c/pvplevels add level/xp/kills/deaths <player> <number>'
+    - '&c/pvplevels remove level/xp/kills/deaths <player> <number>'
+    - '&c/pvplevels reload'
+    - '&c/pvplevels hologram create/delete/list/info/setline/addline/removeline'
+    - '&c/pvplevels profile <player>'
+    - '&c/pvplevels profileall'
+    - '&c/pvpstats <player>'
+    - '&c/pvpshop'
+    - '&c/pvpsell'
+    - '&c/pvpmultipliers'
+    - '&c/pvpboosters'
+    - '&c/pvptop level/xp/kills/deaths/kdr'
+  console:
+    help:
+    - '&7----------&aPvPLevels Help&7----------'
+    - '&c/pvplevels set level/xp/kills/deaths <player> <number>'
+    - '&c/pvplevels add level/xp/kills/deaths <player> <number>'
+    - '&c/pvplevels remove level/xp/kills/deaths <player> <number>'
+    - '&c/pvplevels replace <player> <slot> <id> <amount> <name/null> <lore/null>
+      <enchant/null>'
+    - '&c/pvplevels give <player> <id> <amount> <name/null> <lore/null> <enchant/null>'
+    - '&c/pvplevels clear <player> <slot>'
+    - '&c/pvplevels reload'
+    - '&c/pvplevels profile <player>'
+    - '&c/pvplevels profileall <player>'
+    - '&c/pvpstats <player>'
+    - '&c/pvpshop <player>'
+    - '&c/pvpsell <player>'
+    - '&c/pvpmultipliers <player>'
+    - '&c/pvpboosters <player>'
+    - '&c/pvplevels multiplier <player> <multiplier> <time>d/mo/h/w/m/s'
+    - '&c/pvplevels booster <player> <booster> <time>d/mo/h/w/m/s'
+    - '&c/pvptop level/xp/kills/deaths/kdr'
+  hologram:
+    defaulttext: Default hologram edit with /pvplevels hologram setline/addline/removeline
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram create/delete/list/info/setline/addline/removeline'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    create:
+      usage:
+      - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram create <name> <text>'
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    delete:
+      usage:
+      - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram delete <name>'
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+      notfound:
+      - '&7[&aPvPLevels&7] &c{pvplevels_hologram_name} does not exists!'
+    info:
+      usage:
+      - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram info <name>'
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+      header:
+      - '&7[&aPvPLevels&7] &eName: {pvplevels_hologram_name}'
+      - '&7[&aPvPLevels&7] &eWorld: {pvplevels_hologram_world}'
+      - '&7[&aPvPLevels&7] &eX: {pvplevels_hologram_x}'
+      - '&7[&aPvPLevels&7] &eY: {pvplevels_hologram_y}'
+      - '&7[&aPvPLevels&7] &eZ: {pvplevels_hologram_z}'
+      - '&7[&aPvPLevels&7] &eLines:'
+      lines:
+      - '&e{pvplevels_hologram_line}: {pvplevels_hologram_text}'
+      footer:
+      - ''
+      notfound:
+      - '&7[&aPvPLevels&7] &c{pvplevels_hologram_name} does not exists!'
+    list:
+    - '&aPvPLevels &7> &bHolograms list'
+    - '&6{pvplevels_hologram_list}'
+    protocollib:
+      notfound:
+      - '&7[&aPvPLevels&7] &cYou dont have ProtocolLib installed!'
+    holographicdisplays:
+      notfound:
+      - '&7[&aPvPLevels&7] &cYou dont have Holographic Displays installed!'
+      config:
+      - '&7[&aPvPLevels&7] &cYou dont have Holographic Displays enabled in config.yml!'
+    level:
+      none:
+        player: None
+        level: None
+    xp:
+      none:
+        player: None
+        xp: None
+    kills:
+      none:
+        player: None
+        kills: None
+    deaths:
+      none:
+        player: None
+        deaths: None
+    kdr:
+      none:
+        player: None
+        kdr: None
+    created:
+      header:
+      - '&7[&aPvPLevels&7] &eYou have created a hologram named {pvplevels_hologram_name}'
+      - '&7[&aPvPLevels&7] &eWorld: {pvplevels_hologram_world}'
+      - '&7[&aPvPLevels&7] &eX: {pvplevels_hologram_x}'
+      - '&7[&aPvPLevels&7] &eY: {pvplevels_hologram_y}'
+      - '&7[&aPvPLevels&7] &eZ: {pvplevels_hologram_z}'
+      - '&7[&aPvPLevels&7] &eLines:'
+      lines:
+      - '&e{pvplevels_hologram_line}: {pvplevels_hologram_text}'
+      footer:
+      - ''
+    deleted:
+      header:
+      - '&7[&aPvPLevels&7] &cYou have deleted a hologram named {pvplevels_hologram_name}'
+      - '&7[&aPvPLevels&7] &cWorld: {pvplevels_hologram_world}'
+      - '&7[&aPvPLevels&7] &cX: {pvplevels_hologram_x}'
+      - '&7[&aPvPLevels&7] &cY: {pvplevels_hologram_y}'
+      - '&7[&aPvPLevels&7] &cZ: {pvplevels_hologram_z}'
+      - '&7[&aPvPLevels&7] &cLines:'
+      lines:
+      - '&c{pvplevels_hologram_line}: {pvplevels_hologram_text}'
+      footer:
+      - ''
+    empty:
+    - '&7[&aPvPLevels&7] &cYou dont have any holograms!'
+    alreadyexists:
+    - '&7[&aPvPLevels&7] &c{pvplevels_hologram_name} already exists!'
+    setline:
+      usage:
+      - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram setline <hologram> <line>
+        <text>'
+      setline:
+      - '&7[&aPvPLevels&7] &eChanged line: {pvplevels_hologram_line} with the text:
+        {pvplevels_hologram_text}'
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+      notfound:
+      - '&7[&aPvPLevels&7] &c{pvplevels_hologram_name} does not exists!'
+      notfoundline:
+      - '&7[&aPvPLevels&7] &cThe line does not exists!'
+      notnumber:
+      - '&7[&aPvPLevels&7] &cThe line is not a number!'
+    addline:
+      usage:
+      - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram addline <hologram> <text>'
+      addline:
+      - '&7[&aPvPLevels&7] &eAdded line: {pvplevels_hologram_line} with the text:
+        {pvplevels_hologram_text}'
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+      notfound:
+      - '&7[&aPvPLevels&7] &c{pvplevels_hologram_name} does not exists!'
+    removeline:
+      usage:
+      - '&7[&aPvPLevels&7] &cUsage: /pvplevels hologram removeline <hologram> <line>'
+      removeline:
+      - '&7[&aPvPLevels&7] &eRemoved line: {pvplevels_hologram_line} with the text:
+        {pvplevels_hologram_text}'
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+      notfound:
+      - '&7[&aPvPLevels&7] &c{pvplevels_hologram_name} does not exists!'
+      notfoundline:
+      - '&7[&aPvPLevels&7] &cThe line does not exists!'
+      notnumber:
+      - '&7[&aPvPLevels&7] &cThe line is not a number!'
+  set:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels set level/kills/deaths <player> <number>'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    notfound:
+    - '&7[&aPvPLevels&7] &cThe number you have typed is not in the levels.yml!'
+    notnumber:
+    - '&7[&aPvPLevels&7] &cNot a number!'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    level:
+    - '&7[&aPvPLevels&7] &eChanged {pvplevels_player}´s level to {pvplevels_level_set}'
+    xp:
+    - '&7[&aPvPLevels&7] &eChanged {pvplevels_player}´s xp to {pvplevels_xp_set}'
+    kills:
+    - '&7[&aPvPLevels&7] &eChanged {pvplevels_player}´s kills to {pvplevels_kills_set}'
+    deaths:
+    - '&7[&aPvPLevels&7] &eChanged {pvplevels_player}´s deaths to {pvplevels_deaths_set}'
+  add:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels add level/kills/deaths <player> <number>'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    notfound:
+    - '&7[&aPvPLevels&7] &cThe number you have typed is not in the levels.yml!'
+    notnumber:
+    - '&7[&aPvPLevels&7] &cNot a number!'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    level:
+    - '&7[&aPvPLevels&7] &eAdded {pvplevels_level_added} level´s to {pvplevels_player}'
+    xp:
+    - '&7[&aPvPLevels&7] &eAdded {pvplevels_xp_added} xp to {pvplevels_player}'
+    kills:
+    - '&7[&aPvPLevels&7] &eAdded {pvplevels_kills_added} kills to {pvplevels_player}'
+    deaths:
+    - '&7[&aPvPLevels&7] &eAdded {pvplevels_deaths_added} deaths to {pvplevels_player}'
+  remove:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels remove level/kills/deaths <player> <number>'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    notfound:
+    - '&7[&aPvPLevels&7] &cThe number you have typed is not in the levels.yml!'
+    notnumber:
+    - '&7[&aPvPLevels&7] &cNot a number!'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    donthavexp:
+    - '&7[&aPvPLevels&7] &cThe player does not have so many xp'
+    donthavekills:
+    - '&7[&aPvPLevels&7] &cThe player does not have so many kills'
+    donthavedeaths:
+    - '&7[&aPvPLevels&7] &cThe player does not have so many deaths'
+    level:
+    - '&7[&aPvPLevels&7] &eRemoved {pvplevels_level_removed} level´s from {pvplevels_player}'
+    xp:
+    - '&7[&aPvPLevels&7] &eRemoved {pvplevels_xp_removed} xp from {pvplevels_player}'
+    kills:
+    - '&7[&aPvPLevels&7] &eRemoved {pvplevels_kills_removed} kills from {pvplevels_player}'
+    deaths:
+    - '&7[&aPvPLevels&7] &eRemoved {pvplevels_deaths_removed} deaths from {pvplevels_player}'
+  replace:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels replace <player> <slot> <id> <amount>
+      <name/null> <lore/null> <enchant/null>'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    cannotapply:
+    - '&7[&aPvPLevels&7] &cCannot apply {pvplevels_enchant} to item'
+    noenchant:
+    - '&7[&aPvPLevels&7] &cNo enchant with name {pvplevels_enchant}'
+    amount:
+    - '&7[&aPvPLevels&7] &c{pvplevels_amount} is not an integer'
+    replaced:
+    - '&7[&aPvPLevels&7] &eReplaced {pvplevels_player} slot {pvplevels_slot} with
+      {pvplevels_amount} {pvplevels_item}'
+    replaced-name:
+    - '&7[&aPvPLevels&7] &eReplaced {pvplevels_player} slot {pvplevels_slot} with
+      {pvplevels_amount} {pvplevels_item} name {pvplevels_name}'
+    replaced-lore:
+    - '&7[&aPvPLevels&7] &eReplaced {pvplevels_player} slot {pvplevels_slot} with
+      {pvplevels_amount} {pvplevels_item} name {pvplevels_name} lores {pvplevels_lore}'
+    replaced-enchant:
+    - '&7[&aPvPLevels&7] &eReplaced {pvplevels_player} slot {pvplevels_slot} with
+      {pvplevels_amount} {pvplevels_item} name {pvplevels_name} lores {pvplevels_lore}
+      enchants {pvplevels_enchant}'
+  give:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels give <player> <id> <amount> <name/null>
+      <lore/null> <enchant/null>'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    cannotapply:
+    - '&7[&aPvPLevels&7] &cCannot apply {pvplevels_enchant} to item'
+    noenchant:
+    - '&7[&aPvPLevels&7] &cNo enchant with name {pvplevels_enchant}'
+    amount:
+    - '&7[&aPvPLevels&7] &c{pvplevels_amount} is not a number'
+    given:
+    - '&7[&aPvPLevels&7] &eGiven {pvplevels_player} {pvplevels_amount} {pvplevels_item}'
+    given-name:
+    - '&7[&aPvPLevels&7] &eGiven {pvplevels_player} {pvplevels_amount} {pvplevels_item}
+      name {pvplevels_name}'
+    given-lore:
+    - '&7[&aPvPLevels&7] &eGiven {pvplevels_player} {pvplevels_amount} {pvplevels_item}
+      name {pvplevels_name} lores {pvplevels_lore}'
+    given-enchant:
+    - '&7[&aPvPLevels&7] &eGiven {pvplevels_player} {pvplevels_amount} {pvplevels_item}
+      name {pvplevels_name} lores {pvplevels_lore} enchants {pvplevels_enchant}'
+  clear:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels clear <player> <slot>'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    notnumber:
+    - '&7[&aPvPLevels&7] &cNot a number!'
+    clear:
+    - '&7[&aPvPLevels&7] &eCleared the inventory of {pvplevels_player}'
+    slot:
+    - '&7[&aPvPLevels&7] &eCleared {pvplevels_player} slot {pvplevels_slot} '
+  profile:
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    target:
+      permission:
+      - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+      notonline:
+      - '&7[&aPvPLevels&7] &cThe player is not online!'
+  profileall:
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  multiplier:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels multiplier <player> <multiplier> <time>d/mo/h/w/m/s'
+    disabled:
+    - '&7[&aPvPLevels&7] &cThis multiplier system is disabled!'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    none:
+    - '&7[&aPvPLevels&7] &cYou dont have any multipliers'
+    time:
+    - '&7[&aPvPLevels&7] &cYour current multiplier has run out of time!'
+    active:
+    - '&7[&aPvPLevels&7] &cYou currently have an active multiplier:'
+    - '&7[&aPvPLevels&7] &cMultiplier: {pvplevels_multiplier}x'
+    - '&7[&aPvPLevels&7] &cDuration: {pvplevels_multiplier_time}'
+    - '&7[&aPvPLevels&7] &cDuration left: {pvplevels_multiplier_time_left}'
+    message:
+    - '&7[&aPvPLevels&7] &eYou have used a multiplier!'
+    - '&7[&aPvPLevels&7] &eMultiplier: {pvplevels_multiplier}x'
+    - '&7[&aPvPLevels&7] &eDuration: {pvplevels_multiplier_time}'
+    given:
+    - '&7[&aPvPLevels&7] &eYou were given a {pvplevels_multiplier}x multiplier for
+      {pvplevels_multiplier_time}'
+    - '&7[&aPvPLevels&7] &eYou can use the multiplier by using the command /pvpmultipliers'
+    number:
+    - '&7[&aPvPLevels&7] &cNot a number!'
+    config:
+    - '&7[&aPvPLevels&7] &cThe number is not in multiplier.yml!'
+    second: second
+    minute: min
+    hour: hour
+    day: day
+    week: week
+    month: month
+    seconds: seconds
+    minutes: mins
+    hours: hours
+    days: days
+    weeks: weeks
+    months: months
+  booster:
+    usage:
+    - '&7[&aPvPLevels&7] &cUsage: /pvplevels booster <player> <booster> <time>d/mo/h/w/m/s'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    given:
+    - '&7[&aPvPLevels&7] &eYou were given a {pvplevels_booster}x booster for {pvplevels_booster_time}'
+    - '&7[&aPvPLevels&7] &eYou can use the booster by using the command /pvpboosters'
+    number:
+    - '&7[&aPvPLevels&7] &cNot a number!'
+    inqueue:
+    - '&7[&aPvPLevels&7] &eYou are in the queue with!'
+    - '&7[&aPvPLevels&7] &eQueue: {pvplevels_booster_queue}'
+    - '&7[&aPvPLevels&7] &eBooster: {pvplevels_booster}x'
+    - '&7[&aPvPLevels&7] &eDuration: {pvplevels_booster_time}'
+    queue:
+    - '&7[&aPvPLevels&7] &eYou are now added to the queue with!'
+    - '&7[&aPvPLevels&7] &eQueue: {pvplevels_booster_queue}'
+    - '&7[&aPvPLevels&7] &eBooster: {pvplevels_booster}x'
+    - '&7[&aPvPLevels&7] &eDuration: {pvplevels_booster_time}'
+    queuefirst:
+    - '&7[&aPvPLevels&7] &eYou used a booster!'
+    - '&7[&aPvPLevels&7] &eBooster: {pvplevels_booster}x'
+    - '&7[&aPvPLevels&7] &eDuration: {pvplevels_booster_time}'
+    none:
+    - '&7[&aPvPLevels&7] &cYou dont have any boosters!'
+    config:
+    - '&7[&aPvPLevels&7] &cThe number is not in booster.yml!'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+    activated:
+    - '&7[&aPvPLevels&7] &eYou have activated a {pvplevels_booster}x global booster
+      for {pvplevels_booster_time}'
+    activatedbroadcast:
+    - '&7[&aPvPLevels&7] &e{pvplevels_player} has activated a {pvplevels_booster}x
+      global booster for {pvplevels_booster_time}'
+    runout:
+    - '&7[&aPvPLevels&7] &cYour {pvplevels_booster}x global booster for {pvplevels_booster_time}
+      has run out of time'
+    runoutbroadcast:
+    - '&7[&aPvPLevels&7] &c{pvplevels_player} {pvplevels_booster}x global booster
+      for {pvplevels_booster_time} has run out of time'
+    second: second
+    minute: min
+    hour: hour
+    day: day
+    week: week
+    month: month
+    seconds: seconds
+    minutes: mins
+    hours: hours
+    days: days
+    weeks: weeks
+    months: months
+PvPStats:
+  permission:
+  - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  message:
+  - '&7----------&aPvPLevels Stats&7----------'
+  - '&eName: &6{pvplevels_player}'
+  - '&eLevel: &6{pvplevels_level}'
+  - '&eXP: &6{pvplevels_xp}'
+  - '&eKills: &6{pvplevels_kills}'
+  - '&eDeaths: &6{pvplevels_deaths}'
+  - '&eKDR: &6{pvplevels_kdr}'
+  target:
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    message:
+    - '&7----------&aPvPLevels Stats&7----------'
+    - '&eName: &6{pvplevels_player}'
+    - '&eLevel: &6{pvplevels_level}'
+    - '&eXP: &6{pvplevels_xp}'
+    - '&eKills: &6{pvplevels_kills}'
+    - '&eDeaths: &6{pvplevels_deaths}'
+    - '&eKDR: &6{pvplevels_kdr}'
+    notonline:
+    - '&7[&aPvPLevels&7] &cThe player is not online!'
+PvPShop:
+  permission:
+  - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  require:
+  - '&7[&aPvPLevels&7] &cYou are not the required level!'
+  vault:
+    notfound:
+    - '&7[&aPvPLevels&7] &cYou dont have Vault installed!'
+  vault-economy:
+    notfound:
+    - '&7[&aPvPLevels&7] &cYou dont have a Vault Economy installed!'
+PvPSell:
+  permission:
+  - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  require:
+  - '&7[&aPvPLevels&7] &cYou are not the required level!'
+  sell-price:
+  - '&7[&aPvPLevels&7] &cYou cannot sell that item because the sell price is 0!'
+  not-enough-items:
+  - '&7[&aPvPLevels&7] &cYou don''t have enough items to sell!'
+  vault:
+    notfound:
+    - '&7[&aPvPLevels&7] &cYou dont have Vault installed!'
+  vault-economy:
+    notfound:
+    - '&7[&aPvPLevels&7] &cYou dont have a Vault Economy installed!'
+PvPTop:
+  usage:
+  - '&7[&aPvPLevels&7] &cUsage: /pvptop level/xp/kills/deaths/kdr'
+  permission:
+  - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+  level:
+    message:
+    - '&7----------&aTop Level&7----------'
+    - '&7[&a1&7] &e{pvplevels_player_1} &6> &b{pvplevels_player_stats_1}'
+    - '&7[&a2&7] &e{pvplevels_player_2} &6> &b{pvplevels_player_stats_2}'
+    - '&7[&a3&7] &e{pvplevels_player_3} &6> &b{pvplevels_player_stats_3}'
+    - '&7[&a4&7] &e{pvplevels_player_4} &6> &b{pvplevels_player_stats_4}'
+    - '&7[&a5&7] &e{pvplevels_player_5} &6> &b{pvplevels_player_stats_5}'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    none:
+      player: None
+      level: None
+  xp:
+    message:
+    - '&7----------&aTop XP&7----------'
+    - '&7[&a1&7] &e{pvplevels_player_1} &6> &b{pvplevels_player_stats_1}'
+    - '&7[&a2&7] &e{pvplevels_player_2} &6> &b{pvplevels_player_stats_2}'
+    - '&7[&a3&7] &e{pvplevels_player_3} &6> &b{pvplevels_player_stats_3}'
+    - '&7[&a4&7] &e{pvplevels_player_4} &6> &b{pvplevels_player_stats_4}'
+    - '&7[&a5&7] &e{pvplevels_player_5} &6> &b{pvplevels_player_stats_5}'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    none:
+      player: None
+      xp: None
+  kills:
+    message:
+    - '&7----------&aTop Kills&7----------'
+    - '&7[&a1&7] &e{pvplevels_player_1} &6> &b{pvplevels_player_stats_1}'
+    - '&7[&a2&7] &e{pvplevels_player_2} &6> &b{pvplevels_player_stats_2}'
+    - '&7[&a3&7] &e{pvplevels_player_3} &6> &b{pvplevels_player_stats_3}'
+    - '&7[&a4&7] &e{pvplevels_player_4} &6> &b{pvplevels_player_stats_4}'
+    - '&7[&a5&7] &e{pvplevels_player_5} &6> &b{pvplevels_player_stats_5}'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    none:
+      player: None
+      kills: None
+  deaths:
+    message:
+    - '&7----------&aTop Deaths&7----------'
+    - '&7[&a1&7] &e{pvplevels_player_1} &6> &b{pvplevels_player_stats_1}'
+    - '&7[&a2&7] &e{pvplevels_player_2} &6> &b{pvplevels_player_stats_2}'
+    - '&7[&a3&7] &e{pvplevels_player_3} &6> &b{pvplevels_player_stats_3}'
+    - '&7[&a4&7] &e{pvplevels_player_4} &6> &b{pvplevels_player_stats_4}'
+    - '&7[&a5&7] &e{pvplevels_player_5} &6> &b{pvplevels_player_stats_5}'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    none:
+      player: None
+      deaths: None
+  kdr:
+    message:
+    - '&7----------&aTop KDR&7----------'
+    - '&7[&a1&7] &e{pvplevels_player_1} &6> &b{pvplevels_player_stats_1}'
+    - '&7[&a2&7] &e{pvplevels_player_2} &6> &b{pvplevels_player_stats_2}'
+    - '&7[&a3&7] &e{pvplevels_player_3} &6> &b{pvplevels_player_stats_3}'
+    - '&7[&a4&7] &e{pvplevels_player_4} &6> &b{pvplevels_player_stats_4}'
+    - '&7[&a5&7] &e{pvplevels_player_5} &6> &b{pvplevels_player_stats_5}'
+    permission:
+    - '&7[&aPvPLevels&7] &cYou dont have permission to use this command!'
+    none:
+      player: None
+      kdr: None
