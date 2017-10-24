@@ -1,0 +1,503 @@
+# < - - - - - - - - - - - - - - - - - - - - > #
+#                                             #
+#                  PvPLevels                  #
+#                 Version: 60                 #
+#                     by                      #
+#                  MathiasMC                  #
+#                                             #
+# < - - - - - - - - - - - - - - - - - - - - > #
+gui:
+  booster:
+    size: 54
+    perpage: 21
+    displayname: '&9Your boosters page: {id}'
+    nextpage:
+      id: '262:0'
+      displayname: '&cNext page'
+      lores:
+      - '&6Go to next page'
+      slot: 53
+    gobackpage:
+      id: '280:0'
+      displayname: '&cGo back'
+      lores:
+      - '&6Go to previous page'
+      slot: 45
+    list:
+      '1':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 0
+      '2':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 1
+      '3':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 2
+      '4':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 3
+      '5':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 4
+      '6':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 5
+      '7':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 6
+      '8':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 7
+      '9':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 8
+      '10':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 9
+      '11':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 17
+      '12':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 18
+      '13':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 26
+      '14':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 27
+      '15':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 35
+      '16':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 36
+      '17':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 37
+      '18':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 38
+      '19':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 39
+      '20':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 40
+      '21':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 41
+      '22':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 42
+      '23':
+        id: '160:13'
+        displayname: ' '
+        lores: []
+        POSITION: 43
+      '24':
+        id: '160:14'
+        displayname: ' '
+        lores: []
+        POSITION: 44
+    boosters:
+      '1':
+        '1':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '2':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '3':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '4':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '5':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '6':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '7':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '8':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '9':
+          displayname: '&6Booster'
+          id: '263:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+      '2':
+        displayname: '&6Booster'
+        id: '268:0'
+        lores:
+        - '&ePower: &a{pvplevels_booster}'
+        - '&eDuration: &a{pvplevels_booster_time}'
+        '1':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '2':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '3':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '4':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '5':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '6':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '7':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '8':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '9':
+          displayname: '&6Booster'
+          id: '268:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+      '3':
+        displayname: '&6Booster'
+        id: '272:0'
+        lores:
+        - '&ePower: &a{pvplevels_booster}'
+        - '&eDuration: &a{pvplevels_booster_time}'
+        '1':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '2':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '3':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '4':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '5':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '6':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '7':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '8':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '9':
+          displayname: '&6Booster'
+          id: '272:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+      '4':
+        displayname: '&6Booster'
+        id: '267:0'
+        lores:
+        - '&ePower: &a{pvplevels_booster}'
+        - '&eDuration: &a{pvplevels_booster_time}'
+        '1':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '2':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '3':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '4':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '5':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '6':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '7':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '8':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '9':
+          displayname: '&6Booster'
+          id: '267:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+      '5':
+        displayname: '&6Booster'
+        id: '283:0'
+        lores:
+        - '&ePower: &a{pvplevels_booster}'
+        - '&eDuration: &a{pvplevels_booster_time}'
+        '1':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '2':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '3':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '4':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '5':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '6':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '7':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '8':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '9':
+          displayname: '&6Booster'
+          id: '283:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+      '6':
+        displayname: '&6Booster'
+        id: '276:0'
+        lores:
+        - '&ePower: &a{pvplevels_booster}'
+        - '&eDuration: &a{pvplevels_booster_time}'
+        '1':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '2':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '3':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '4':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '5':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '6':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '7':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '8':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+        '9':
+          displayname: '&6Booster'
+          id: '276:0'
+          lores:
+          - '&ePower: &a{pvplevels_booster}'
+          - '&eDuration: &a{pvplevels_booster_time}'
+ 
