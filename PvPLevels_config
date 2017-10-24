@@ -1,0 +1,408 @@
+# < - - - - - - - - - - - - - - - - - - - - > #
+#                                             #
+#                  PvPLevels                  #
+#                 Version: 60                 #
+#                     by                      #
+#                  MathiasMC                  #
+#                                             #
+# < - - - - - - - - - - - - - - - - - - - - > #
+Log:
+  file:
+    use: true
+  console:
+    use: true
+Update:
+  check:
+    use: true
+Permissions:
+  update-notify: pvplevels.update.notify
+  xp-player: pvplevels.xp.player
+  xp-animal: pvplevels.xp.animal
+  xp-mob: pvplevels.xp.mob
+  use: pvplevels.use
+  set: pvplevels.set
+  add: pvplevels.add
+  remove: pvplevels.remove
+  reload: pvplevels.reload
+  pvpstats: pvplevels.pvpstats
+  pvpstats-target: pvplevels.pvpstats.target
+  profile: pvplevels.profile
+  profile-target: pvplevels.profile.target
+  profileall: pvplevels.profileall
+  pvpshop: pvplevels.pvpshop
+  pvpsell: pvplevels.pvpsell
+  scoreboard: pvplevels.scoreboard
+  pvpmultipliers: pvplevels.pvpmultipliers
+  pvpboosters: pvplevels.pvpboosters
+  pvptop: pvplevels.pvptop
+  pvptop-level: pvplevels.pvptop.level
+  pvptop-xp: pvplevels.pvptop.xp
+  pvptop-kills: pvplevels.pvptop.kills
+  pvptop-deaths: pvplevels.pvptop.deaths
+  pvptop-kdr: pvplevels.pvptop.kdr
+  hologram: pvplevels.hologram
+  hologram-create: pvplevels.hologram.create
+  hologram-delete: pvplevels.hologram.delete
+  hologram-list: pvplevels.hologram.list
+  hologram-info: pvplevels.hologram.info
+  hologram-setline: pvplevels.hologram.setline
+  hologram-addline: pvplevels.hologram.addline
+  hologram-removeline: pvplevels.hologram.removeline
+PvPTop:
+  level:
+    command: level
+  xp:
+    command: xp
+  kills:
+    command: kills
+  deaths:
+    command: deaths
+  kdr:
+    command: kdr
+MySQL:
+  use: false
+  host: localhost
+  port: 3306
+  database: testdatabase
+  username: user
+  password: password
+WorldGuard:
+  use: false
+  regions:
+  - region1
+  - region2
+  - region3
+Worlds:
+  xp:
+    use: false
+    list:
+    - world
+    - world_nether
+    - world_the_end
+  kills:
+    use: false
+    list:
+    - world
+    - world_nether
+    - world_the_end
+  deaths:
+    use: false
+    list:
+    - world
+    - world_nether
+    - world_the_end
+  prefix:
+    use: false
+    list:
+    - world
+    - world_nether
+    - world_the_end
+  scoreboard:
+    use: false
+    list:
+    - world
+    - world_nether
+    - world_the_end
+Placeholders:
+  placeholderapi:
+    use: false
+  factionsuuid:
+    use: false
+  vault:
+    use: false
+API:
+  featherboard:
+    use: true
+  essentials:
+    use: true
+  placeholderapi:
+    use: true
+  holographicdisplays:
+    use: true
+  leaderheads:
+    use: true
+Multiplier:
+  system: CUSTOM
+Holograms:
+  update: 60
+  space: 0.5
+Instant-Respawn:
+  use: false
+XP-Progress-Style:
+  option: 1
+  xp: '&2|'
+  none: '&c|'
+  placeholder: '&6[{xp-progress-style}&6]'
+XP-Progress-Bar:
+  number:
+    use: false
+    show: LEVEL
+  xp-show:
+    use: false
+XP-Lose:
+  player:
+    xp:
+      use: true
+      min: 1
+      max: 3
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &cstraciles {pvplevels_xp} doswiadczenia.'
+  other:
+    xp:
+      use: true
+      min: 1
+      max: 3
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &cstraciles {pvplevels_xp} doswiadczenia.'
+Auto-Generation:
+  levels:
+    use: false
+    levels: 100
+    commands:
+      use: true
+      list:
+      - tell {pvplevels_player} Level {pvplevels_level}
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &eAwansowales na {pvplevels_level} poziom.'
+    broadcast:
+      use: true
+      list:
+      - '&7[&aPvP&7] &e{pvplevels_player} awansowal na {pvplevels_level} poziom.'
+    xp:
+      min: 15
+      max: 20
+Player:
+  xp:
+    min: 1
+    max: 3
+  messages:
+    use: true
+    list:
+    - '&7[&aPvPLevels&7] &eZabiles &b{pvplevels_player} &ei zdobyles &6{pvplevels_xp_get}
+      &edoswiadczenia, potrzebujesz jeszcze {pvplevels_xp_needed} doswiadczenia do poziomu {pvplevels_level_to}'
+  kill:
+    session:
+      use: false
+      int: 2
+      time: 120
+Mob:
+  xp:
+    min: 1
+    max: 3
+  messages:
+    use: false
+    list:
+    - '&7[&aPvPLevels&7] &eYou killed &b{pvplevels_mob} &eand you got &6{pvplevels_xp_get}
+      &exp you need {pvplevels_xp_needed} xp to level {pvplevels_level_to}'
+Animal:
+  xp:
+    min: 1
+    max: 3
+  messages:
+    use: false
+    list:
+    - '&7[&aPvPLevels&7] &eYou killed &b{pvplevels_animal} &eand you got &6{pvplevels_xp_get}
+      &exp you need {pvplevels_xp_needed} xp to level {pvplevels_level_to}'
+Spawners:
+  xp:
+    mob: true
+    animal: true
+Prefix:
+  use: true
+  prefix: '&8[&aPoz. &6{pvplevels_level}&8] &b{pvplevels_player} &f{pvplevels_text}'
+  levels:
+    use: true
+    list:
+      '0':
+        prefix: '&f[&aPoz. &6{pvplevels_level}&f] &b{pvplevels_player} &f{pvplevels_text}'
+      '1':
+        prefix: '&1[&aPoz. &6{pvplevels_level}&1] &b{pvplevels_player} &f{pvplevels_text}'
+      '2':
+        prefix: '&2[&aPoz. &6{pvplevels_level}&2] &b{pvplevels_player} &f{pvplevels_text}'
+      '3':
+        prefix: '&3[&aPoz. &6{pvplevels_level}&3] &b{pvplevels_player} &f{pvplevels_text}'
+      '4':
+        prefix: '&4[&aPoz. &6{pvplevels_level}&4] &b{pvplevels_player} &f{pvplevels_text}'
+      '5':
+        prefix: '&5[&aPoz. &6{pvplevels_level}&5] &b{pvplevels_player} &f{pvplevels_text}'
+Scoreboard:
+  use: true
+  title: '&aStatystyki PvP'
+  list:
+  - ' '
+  - '&eNazwa: &6{pvplevels_player}'
+  - ' '
+  - '&ePoziom: &6{pvplevels_level}'
+  - ' '
+  - '&eDosw: &6{pvplevels_xp}&f/&6{pvplevels_xp_required}'
+  - ' '
+  - '&eProgres: &6{pvplevels_xp_progress}%'
+  - ' '
+  - '&eZabojstwa: &6{pvplevels_kills}'
+  - ' '
+  - '&eSmierci: &6{pvplevels_deaths}'
+  - ' '
+  - '&eKDR: &6{pvplevels_kdr}'
+  - ' '
+Join:
+  first-time:
+    use: false
+    commands:
+      use: false
+      list:
+      - pvplevels replace {pvplevels_player} 39 306:0 1 &eIron[SPACE]Helmet
+      - pvplevels replace {pvplevels_player} 38 307:0 1 &eIron[SPACE]Chestplate
+      - pvplevels replace {pvplevels_player} 37 308:0 1 &eIron[SPACE]Leggings
+      - pvplevels replace {pvplevels_player} 36 309:0 1 &eIron[SPACE]Boots
+      - pvplevels replace {pvplevels_player} 0 267:0 1 &eIron[SPACE]Sword
+    messages:
+      use: false
+      list:
+      - '&7[&aPvPLevels&7] &eYou have got some starter gear!'
+    broadcast:
+      use: false
+      list:
+      - '&7[&aPvPLevels&7] &e{pvplevels_player} has got some starter gear!'
+  join:
+    use: false
+    commands:
+      use: false
+      list:
+      - pvplevels replace {pvplevels_player} 39 306:0 1 &eIron[SPACE]Helmet
+      - pvplevels replace {pvplevels_player} 38 307:0 1 &eIron[SPACE]Chestplate
+      - pvplevels replace {pvplevels_player} 37 308:0 1 &eIron[SPACE]Leggings
+      - pvplevels replace {pvplevels_player} 36 309:0 1 &eIron[SPACE]Boots
+      - pvplevels replace {pvplevels_player} 0 267:0 1 &eIron[SPACE]Sword
+    messages:
+      use: false
+      list:
+      - '&7[&aPvPLevels&7] &eYou have got some gear!'
+    broadcast:
+      use: false
+      list:
+      - '&7[&aPvPLevels&7] &e{pvplevels_player} has got some gear!'
+Respawn:
+  use: false
+  commands:
+    use: false
+    list:
+    - pvplevels give {pvplevels_player} 260:0 1
+  messages:
+    use: false
+    list:
+    - '&7[&aPvPLevels&7] &eYou have got 1 apple!'
+  broadcast:
+    use: false
+    list:
+    - '&7[&aPvPLevels&7] &e{pvplevels_player} has got 1 apple!'
+Rewards:
+  kills:
+    use: false
+    list:
+      default:
+        '2':
+          permission: pvplevels.rewards.kills.default
+          commands:
+            use: true
+            list:
+            - tell {pvplevels_player} Otrzymales nagrode, poniewaz zabiles 2 osoby z rzedu!
+          messages:
+            use: true
+            list:
+            - '&7[&aPvP&7] &eOtrzymales nagrode, poniewaz zabiles 2 osoby z rzedu!'
+          broadcast:
+            use: false
+            list:
+            - '&7[&aPvP&7] &e{pvplevels_player} has got a reward!'
+        '5':
+          permission: pvplevels.rewards.kills.default
+          commands:
+            use: true
+            list:
+            - tell {pvplevels_player} Otrzymales nagrode, poniewaz zabiles 5 osob z rzedu!
+          messages:
+            use: true
+            list:
+            - '&7[&aPvP&7] &eOtrzymales nagrode, poniewaz zabiles 5 osob z rzedu!'
+          broadcast:
+            use: false
+            list:
+            - '&7[&aPvP&7] &e{pvplevels_player} has got an reward!'
+      vip:
+        '2':
+          permission: pvplevels.rewards.kills.vip
+          commands:
+            use: true
+            list:
+            - tell {pvplevels_player} You've got a reward because you have 2 kills!
+          messages:
+            use: true
+            list:
+            - '&7[&aPvPLevels&7] &eYou''ve got a reward because you have 2 kills!'
+          broadcast:
+            use: true
+            list:
+            - '&7[&aPvPLevels&7] &e{pvplevels_player} has got a reward!'
+        '5':
+          permission: pvplevels.rewards.kills.vip
+          commands:
+            use: true
+            list:
+            - tell {pvplevels_player} You've got a reward because you have 5 kills!
+          messages:
+            use: true
+            list:
+            - '&7[&aPvPLevels&7] &eYou''ve got a reward because you have 5 kills!'
+          broadcast:
+            use: true
+            list:
+            - '&7[&aPvPLevels&7] &e{pvplevels_player} has got an reward!'
+KillStreaks:
+  use: true
+  list:
+    '5':
+      commands:
+        use: true
+        list:
+        - tell {pvplevels_player} twoja seria zabojstw wynosi 5!
+      messages:
+        use: true
+        list:
+        - '&7[&aPvP&7] &etwoja seria zabojstw wynosi 5!'
+      broadcast:
+        use: true
+        list:
+        - '&7[&aPvP&7] &e{pvplevels_player} ma serie zabojstw wynoszaca 5!'
+    '10':
+      commands:
+        use: true
+        list:
+        - tell {pvplevels_player} twoja seria zabojstw wynosi 10!
+      messages:
+        use: true
+        list:
+        - '&7[&aPvP&7] &etwoja seria zabojstw wynosi 10!'
+      broadcast:
+        use: true
+        list:
+        - '&7[&aPvP&7] &e{pvplevels_player} ma serie zabojstw wynoszaca 10!'
+    '15':
+      commands:
+        use: true
+        list:
+        - tell {pvplevels_player} twoja seria zabojstw wynosi 15!
+      messages:
+        use: true
+        list:
+        - '&7[&aPvP&7] &etwoja seria zabojstw wynosi 15!'
+      broadcast:
+        use: true
+        list:
+        - '&7[&aPvP&7] &e{pvplevels_player} ma serie zabojstw wynoszaca 15!'
+ 
