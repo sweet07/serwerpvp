@@ -1,0 +1,370 @@
+# < - - - - - - - - - - - - - - - - - - - - > #
+#                                             #
+#                  PvPLevels                  #
+#                 Version: 60                 #
+#                     by                      #
+#                  MathiasMC                  #
+#                                             #
+# < - - - - - - - - - - - - - - - - - - - - > #
+gui:
+  '1':
+    name: '&9&lSklep PvP strona: 1'
+    slots: 54
+    nextpage:
+      id: '262:0'
+      slot: 53
+      event: NEXTPAGE
+      displayname: '&cNastepna'
+      lores:
+      - '&6Przechodzi do nastepnej strony'
+    goback:
+      id: '280:0'
+      slot: 45
+      event: GOBACK
+      displayname: '&cPowrot'
+      lores:
+      - '&6Wraca do poprzedniej strony'
+    list:
+      '1':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 0
+      '2':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 1
+      '3':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 2
+      '4':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 3
+      '5':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 4
+      '6':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 5
+      '7':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 6
+      '8':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 7
+      '9':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 8
+      '10':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 9
+      '11':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 17
+      '12':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 18
+      '13':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 26
+      '14':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 27
+      '15':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 35
+      '16':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 36
+      '17':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 37
+      '18':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 38
+      '19':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 39
+      '20':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 40
+      '21':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 41
+      '22':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 42
+      '23':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 43
+      '24':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 44
+      '25':
+        id: '264:0'
+        title: '&cDiamond'
+        event: COMMAND
+        commands:
+        - pvplevels give {pvplevels_player} 264:0 1
+        cooldown: 100
+        level: 0
+        cost: '50'
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have bought 1 diamond for $50!'
+        money:
+        - '&7[&aPvPLevels&7] &cYou don''t have enough money!'
+        lores:
+        - '&eBuy 1 diamond'
+        - '&eCost: $50'
+        - '&eRequire Level: 0'
+        POSITION: 10
+      '26':
+        id: '388:0'
+        title: '&cEmerald'
+        event: COMMAND
+        commands:
+        - pvplevels give {pvplevels_player} 388:0 1
+        cooldown: 100
+        level: 1
+        cost: '100'
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have bought 1 emerald for $100!'
+        money:
+        - '&7[&aPvPLevels&7] &cYou don''t have enough money!'
+        lores:
+        - '&eBuy 1 emerald'
+        - '&eCost: $100'
+        - '&eRequire Level: 1'
+        POSITION: 11
+  '2':
+    name: '&9&lSklep PvP strona: 2'
+    slots: 54
+    nextpage:
+      id: '262:0'
+      slot: 53
+      event: NEXTPAGE
+      displayname: '&cNastepna'
+      lores:
+      - '&6Przechodzi do nastepnej strony'
+    goback:
+      id: '280:0'
+      slot: 45
+      event: GOBACK
+      displayname: '&cPowrot'
+      lores:
+      - '&6Wraca do poprzedniej strony'
+    list:
+      '1':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 0
+      '2':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 1
+      '3':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 2
+      '4':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 3
+      '5':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 4
+      '6':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 5
+      '7':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 6
+      '8':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 7
+      '9':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 8
+      '10':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 9
+      '11':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 17
+      '12':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 18
+      '13':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 26
+      '14':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 27
+      '15':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 35
+      '16':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 36
+      '17':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 37
+      '18':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 38
+      '19':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 39
+      '20':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 40
+      '21':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 41
+      '22':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 42
+      '23':
+        id: '160:13'
+        title: ' '
+        lores: []
+        POSITION: 43
+      '24':
+        id: '160:14'
+        title: ' '
+        lores: []
+        POSITION: 44
+      '25':
+        id: '351:4'
+        title: '&cLapis lazuli'
+        event: COMMAND
+        commands:
+        - pvplevels give {pvplevels_player} 351:4 1
+        cooldown: 100
+        level: 4
+        cost: '200'
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have bought 1 lapis lazuli for $200!'
+        money:
+        - '&7[&aPvPLevels&7] &cYou don''t have enough money!'
+        lores:
+        - '&eBuy 1 lapis lazuli'
+        - '&eCost: $200'
+        - '&eRequire Level: 4'
+        POSITION: 10
+      '26':
+        id: '331:0'
+        title: '&cRedstone'
+        event: COMMAND
+        commands:
+        - pvplevels give {pvplevels_player} 331:0 1
+        cooldown: 100
+        level: 5
+        cost: '300'
+        wait:
+        - '&7[&aPvPLevels&7] &cYou have to wait {pvplevels_cooldown} seconds to use
+          again'
+        message:
+        - '&7[&aPvPLevels&7] &eYou have bought 1 redstone for $300!'
+        money:
+        - '&7[&aPvPLevels&7] &cYou don''t have enough money!'
+        lores:
+        - '&eBuy 1 redstone'
+        - '&eCost: $300'
+        - '&eRequire Level: 5'
+        POSITION: 11
+ 
