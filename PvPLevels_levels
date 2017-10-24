@@ -1,0 +1,90 @@
+# < - - - - - - - - - - - - - - - - - - - - > #
+#                                             #
+#                  PvPLevels                  #
+#                 Version: 60                 #
+#                     by                      #
+#                  MathiasMC                  #
+#                                             #
+# < - - - - - - - - - - - - - - - - - - - - > #
+Levels:
+  '1':
+    commands:
+      use: true
+      list:
+      - tell {pvplevels_player} Poziom 1
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &eAwansowales na 1 poziom.'
+    broadcast:
+      use: true
+      list:
+      - '&7[&aPvP&7] &e{pvplevels_player} awansowal na 1 poziom!'
+    xp:
+      min: 15
+      max: 34
+  '2':
+    commands:
+      use: true
+      list:
+      - tell {pvplevels_player} Poziom 2
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &eAwansowales na 2 poziom.'
+    broadcast:
+      use: true
+      list:
+      - '&7[&aPvP&7] &e{pvplevels_player} awansowal na 2 poziom!'
+    xp:
+      min: 35
+      max: 54
+  '3':
+    commands:
+      use: true
+      list:
+      - tell {pvplevels_player} Poziom 3
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &eAwansowales na 3 poziom.'
+    broadcast:
+      use: true
+      list:
+      - '&7[&aPvP&7] &e{pvplevels_player} awansowal na 3 poziom!'
+    xp:
+      min: 55
+      max: 74
+  '4':
+    commands:
+      use: true
+      list:
+      - tell {pvplevels_player} Poziom 4
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &eAwansowales na 4 poziom.'
+    broadcast:
+      use: true
+      list:
+      - '&7[&aPvP&7] &e{pvplevels_player} awansowal na 4 poziom!'
+    xp:
+      min: 75
+      max: 94
+  '5':
+    commands:
+      use: true
+      list:
+      - tell {pvplevels_player} Poziom 5
+    messages:
+      use: true
+      list:
+      - '&7[&aPvP&7] &eAwansowales na 5 poziom.'
+    broadcast:
+      use: true
+      list:
+      - '&7[&aPvP&7] &e{pvplevels_player} awansowal na 5 poziom!'
+    xp:
+      min: 95
+      max: 100
+ 
