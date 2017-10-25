@@ -1,0 +1,124 @@
+groups:
+  default:
+    default: true
+    permissions:
+    - -bukkit.command.version
+    - -bukkit.command.plugins
+    - -bukkit.command.help
+    - -minecraft.command.me
+    - -minecraft.command.tell
+    - -bukkit.broadcast.user
+    - -bukkit.broadcast
+    - authme.player.register
+    - authme.player.login
+    - authme.player.changepassword
+    - -authme.player.unregister
+    - -authme.player.logout
+    - essentials.kit
+    -	essentials.kits.start
+    -	essentials.time
+    -	essentials.balance
+    - essentials.balancetop
+    - essentials.eco
+    - essentials.pay
+    - essentials.afk
+    -	essentials.afk.auto
+    - -essentials.help
+    - essentials.helpop
+    - essentials.ignore
+    -	essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    -	essentials.motd
+    - essentials.msg
+    -	essentials.rules
+    - essentials.suicide
+    - essentials.ban.notify
+    - essentials.kick.notify
+    -	essentials.mute.notify
+    - essentials.spawn
+    - essentials.delhome
+    - essentials.home
+    - essentials.sethome
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.default
+    -	essentials.tpaccept
+    - essentials.tpdeny
+    -	essentials.warp
+    - essentials.warp.list
+    - essentials.signs.use.balance
+    - essentials.signs.use.disposal
+    - essentials.signs.use.free
+    - essentials.signs.use.kit
+    - essentials.signs.use.mail
+    - essentials.signs.use.time
+    -	essentials.signs.use.warp
+    inheritance: []
+    info:
+      prefix: '&7'
+      build: false
+      suffix: ''
+  vip:
+    default: false
+    permissions:
+    -	essentials.hat
+    -	essentials.kits.vip
+    -	essentials.ptime
+    -	essentials.workbench
+    - essentials.afk.kickexempt
+    - essentials.keepxp
+    - essentials.msg.color
+    -	essentials.msg.format
+    - essentials.msg.magic
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - essentials.enderchest
+    - essentials.pweather
+    -	essentials.back
+    -	essentials.back.ondeath
+    -	essentials.sethome.multiple.vip
+    -	essentials.tpa
+    - essentials.chat.color
+    -	essentials.chat.format
+    - essentials.chat.magic
+    - essentials.joinfullserver
+    -	essentials.signs.color
+    - essentials.signs.format
+    - essentials.signs.magic
+    inheritance:
+    - default
+    info:
+      prefix: '&6[VIP]&e '
+      build: true
+      suffix: ''  
+  kidmod:
+    default: false
+    permissions:
+    - 
+    inheritance:
+    - default
+    info:
+      prefix: '&a[Jr&2Mod]&a '
+      build: true
+      suffix: ''
+  mod:
+    default: false
+    permissions:
+    - 
+    inheritance:
+    - kidmod
+    - default
+    info:
+      prefix: '&2[Moderator]&a '
+      build: true
+      suffix: ''
+  admin:
+    default: false
+    permissions:
+    - '*'
+    info:
+      prefix: '&4[Administrator]&a '
+      build: true
+      suffix: ''
