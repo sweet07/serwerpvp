@@ -19,7 +19,6 @@ groups:
     -	essentials.time
     -	essentials.balance
     - essentials.balancetop
-    - essentials.eco
     - essentials.pay
     - essentials.afk
     -	essentials.afk.auto
@@ -96,9 +95,50 @@ groups:
   kidmod:
     default: false
     permissions:
-    - 
+    - authme.admin.changepassword
+    - authme.admin.lastlogin
+    - authme.admin.register
+    - authme.admin.unregister
+    -	essentials.fly
+    -	essentials.god
+    - essentials.balance.others
+    - essentials.afk.kickexempt
+    - essentials.kits.kidmod
+    - essentials.helpop.receive
+    -	essentials.chat.ignoreexempt
+    -	essentials.msg.url
+    -	essentials.nick.others
+    - essentials.realname
+    - essentials.seen
+    - essentials.seen.banreason
+    - essentials.ban
+    -	essentials.ban.offline
+    - essentials.banip
+    - essentials.enderchest.others
+    - essentials.invsee
+    -	essentials.kick
+    - essentials.mute
+    - essentials.mute.offline
+    - essentials.tempban
+    -	essentials.tempban.offline
+    - essentials.tempban.unlimited
+    -	essentials.vanish
+    - essentials.vanish.interact
+    - essentials.weather
+    -	essentials.spawn.others
+    -	essentials.home.others
+    - essentials.sethome.multiple.unlimited
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.teleport.cooldown.bypass
+    - essentials.teleport.timer.bypass
+    -	essentials.teleport.timer.move
+    - essentials.warps.*
+    - essentials.silentjoin
     inheritance:
     - default
+    - vip
     info:
       prefix: '&a[Jr&2Mod]&a '
       build: true
@@ -106,9 +146,35 @@ groups:
   mod:
     default: false
     permissions:
-    - 
+    - essentials.fly.safelogin
+    - essentials.kits.mod
+    - essentials.speed
+    - essentials.speed.fly
+    - essentials.eco
+    - essentials.time.set
+    -	essentials.afk.kickexempt
+    -	essentials.list.hidden
+    - essentials.seen.extra
+    - essentials.seen.ipsearch
+    -	essentials.geoip.show
+    - essentials.whois
+    - essentials.banip
+    - essentials.clearinventory.all
+    - essentials.clearinventory.others
+    - essentials.enderchest.modify
+    - essentials.invsee.modify
+    - essentials.mute.exempt
+    - essentials.kick.exempt
+    -	essentials.socialspy
+    - essentials.tempban.exempt
+    -	essentials.tempban.unlimited
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.vanish.see
+    - essentials.chat.url
     inheritance:
     - kidmod
+    - vip
     - default
     info:
       prefix: '&2[Moderator]&a '
